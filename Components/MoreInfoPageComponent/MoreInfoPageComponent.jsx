@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
-import  { useRouter } from "next/router"
+import { useRouter } from "next/router"
 import { useState } from "react"
 import ReactPlayer from "react-player"
 import { useSelector } from "react-redux"
@@ -39,11 +39,13 @@ const MoreInfoPageComponent = ({ data, variant }) => {
 
           <p className={s.Info}>
             {variant === "movie" ? <><span>{data?.release_date || data?.first_air_date} •{" "}</span>
-              <span>{Math.floor(data?.runtime / 60)}ч {data?.runtime % 60}мин •{" "}</span>
+              <span>{Math.floor(data?.runtime / 60) > 0 ? Math.floor(data?.runtime / 60) + "ч" : null}
+               {data?.runtime % 60 > 0 ? data?.runtime % 60 + "мин" : null} •{" "}</span>
+                
               <span>{data?.production_countries?.map((country, index) => country.iso_3166_1 + `${data?.production_countries.length === index + 1 ? " " : ", "}`)}
-               • {" "}</span>
+                • {" "}</span>
               <span>{data?.genres?.map((genre, index) => genre.name + `${data?.genres.length === index + 1 ? " " : ", "}`)}
-              {" "}</span></>
+                {" "}</span></>
               :
               <>
                 <span>{`${data?.release_date || data?.first_air_date}
@@ -54,11 +56,11 @@ const MoreInfoPageComponent = ({ data, variant }) => {
 
                 <span>{data?.number_of_seasons === 1 ? "Сезон" : "Сезонов"} •{" "}</span>
 
-                <span>{data?.episode_run_time[0] >= 60 ? `${Math.floor(data?.episode_run_time[0] / 60)}ч` : null}{" "}
+                <span>{data?.episode_run_time[0] >= 60 ? Math.floor(data?.episode_run_time[0] / 60) + "ч" : null}{" "}
 
-                  {data?.episode_run_time[0] % 60}мин •{" "}</span>
+                  {Math.floor(data?.episode_run_time[0] % 60) > 0 ? data?.episode_run_time[0] % 60 + "мин" : null} •{" "}</span>
                 <span>{data?.origin_country?.map((country, index) => country + `${data?.origin_country.length === index + 1 ? " " : ", "}`)}
-               •{" "}</span>
+                  •{" "}</span>
                 <span>{data?.genres?.map((genre, index) => genre.name + `${data?.genres.length === index + 1 ? " " : ", "}`)}
                   {" "}</span>
               </>}
