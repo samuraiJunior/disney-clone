@@ -1,0 +1,32 @@
+.buttonComponent{
+    background-color: transparent;
+    color: inherit;
+    padding: 11px 41px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid white;
+    font-size: 21px;
+    border-radius: 3px;
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.386);
+    }
+    span{
+        text-transform: uppercase;
+        font-weight: 500;
+        margin-bottom: -3.3px;
+    }
+    
+    &.white{
+        background-color: white;
+        color: black;
+        &:hover{
+            background-color: transparent;
+        }
+    }
+}
+@media (max-width:500px){
+    .buttonComponent{
+        padding: 5px 10px;
+    }
+}

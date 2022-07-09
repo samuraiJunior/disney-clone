@@ -1,0 +1,36 @@
+.BrandsSection {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 31px;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 10px 0 0 10px;
+    column-gap: 15px;
+    justify-content: center;
+}
+
+.brand {
+    width: 248px;
+    height: 144px;
+    border: 3px solid white;
+    background-color: transparent;
+    position: relative;
+    border-radius: 3px;
+    &:hover{
+        .BrandVideo{
+            display: block;
+        }
+    }
+}
+
+.BrandVideo {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}

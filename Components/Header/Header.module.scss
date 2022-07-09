@@ -1,0 +1,93 @@
+.Header {
+    background-color: rgb(41, 36, 36);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    width: 100%;
+    padding: 0 70px;
+    height: 110px;
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.NavItemsWrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+
+    &>*+* {
+        margin-left: 41px;
+    }
+}
+
+.NavItem {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+
+    &>*+* {
+        margin-left: 15px;
+    }
+
+    h3 {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    svg {
+        color: white;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+
+@media (max-width:2141px) {
+    .FormWrapper {
+        margin-left: 50px;
+
+        input {
+            width: 350px;
+            padding: 10px;
+        }
+    }
+
+    .NavItem {
+        &>*+* {
+            margin-left: 11px;
+        }
+
+        h3 {
+            font-size: 19px;
+        }
+    }
+
+    .Header {
+        padding: 0 45px;
+    }
+
+    .NavItemsWrapper {
+        margin-left: 50px;
+
+        &>*+* {
+            margin-left: 21px;
+        }
+    }
+}
+
+@media (max-width:1550px) {
+    .NavItemsWrapper{
+        display: none;
+    }
+    .Header{
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,22 @@
+.container{
+    margin: 0 auto;
+    max-width: 1101px;
+    padding: 10px;
+}
+.VariantWrapper {
+    margin: 0 auto;
+    max-width: 1101px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 30px;
+    justify-content: flex-start;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+@media (max-width:1075px){
+    .VariantWrapper{
+        justify-content: center;
+    }
+}
