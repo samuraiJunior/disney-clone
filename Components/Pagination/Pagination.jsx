@@ -12,7 +12,7 @@ const Paginator = ({ total_pages, currentPage, setCurrentPage }) => {
     <div className={s.PaginationWrapper}>
       <Pagination page={currentPage} sx={{
         ".MuiPagination-ul": { justifyContent: "space-between" }, background: "transaperent",
-        ".MuiPaginationItem-root.Mui-selected": { background: "#ffffffa1", color: "black" },
+        ".MuiPaginationItem-root.Mui-selected": { background: "#ffffffa1", color: "white" },
         ".MuiPaginationItem-root.Mui-disabled": { background: "#ffffffa1", color: "white" },
         ".MuiPaginationItem-root:hover": { background: "#ffffffa1" },
         ".MuiPaginationItem-root": { color: "white" },
