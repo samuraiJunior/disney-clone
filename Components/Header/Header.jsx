@@ -41,7 +41,7 @@ const Header = ({ children }) => {
       <div className={s.logoWrapper}>
         <Image src={"/images/logo.svg"} width={100} height={100} alt={"logo"} />
       </div>
-
+    
       <ul className={s.NavItemsWrapper}>
         <NavItem src={<IoHome />} reactIcon={true} handleClick={NavigateToHome} text={"Home"} />
         <NavItem src={<AiOutlineSearch />} reactIcon={true} text={"Search"} handleClick={showInput} />

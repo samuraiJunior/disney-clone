@@ -12,8 +12,7 @@ export default function Home() {
     <div className={styles.App}>
       <Head>
         <title>
-          Disney+ | The streaming home of Disney, Pixar, Marvel, Star Wars, Nat
-          Geo and Star
+          Disney+ clone
         </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>

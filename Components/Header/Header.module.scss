@@ -17,7 +17,7 @@
 .NavItemsWrapper {
     display: flex;
     align-items: center;
-    margin-left: 150px;
+    margin-left: 250px;
 
     &>*+* {
         margin-left: 41px;
@@ -52,8 +52,6 @@
 
 @media (max-width:2141px) {
     .FormWrapper {
-        margin-left: 50px;
-
         input {
             width: 350px;
             padding: 10px;
