@@ -9,7 +9,7 @@ const Index = () => {
     const { data } = useGetMQuery({ src: "tv/popular", page: currentPage })
     
     return (
-        <VariantPageComponent data={data} variant={"shows"} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+        <VariantPageComponent data={data} variant={"show"} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
     )
 }
 

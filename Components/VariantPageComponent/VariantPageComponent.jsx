@@ -9,11 +9,11 @@ const VariantPageComponent = ({data,currentPage,setCurrentPage,variant}) => {
     const BaseImgUrl = useSelector(state => state.movie.BaseImgUrl)
     const card = data?.results?.map(i => <CollectionItem key={i.id}
         src={i?.backdrop_path !== null ? BaseImgUrl + i?.backdrop_path : BaseImgUrl + i?.poster_path}
-        title={"show"} id={i.id} />)
+        title={variant} id={i.id} />)
     return (
         <Header>
             <Head>
-        <title>Disney+ | {variant}</title>
+        <title>Disney+ | {variant+"s"}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
             <div className={s.container}>
