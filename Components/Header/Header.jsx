@@ -6,13 +6,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import IconButton from '@mui/material/IconButton';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import s from "./Header.module.scss"
 import { IoHome } from "react-icons/io5"
 import { AiOutlinePlus, AiOutlineSearch } from "react-icons/ai"
 import { AiFillStar } from "react-icons/ai"
-import NavItem from './NavItem';
-import { Divider, Hidden, List, ListItem } from '@mui/material';
+import { List, ListItem } from '@mui/material';
 import SearchForm from '../SearchForm/SearchForm';
+import s from "./Header.module.scss"
+import NavItem from './NavItem';
+
 
 const Header = ({ children }) => {
   const router = useRouter()
