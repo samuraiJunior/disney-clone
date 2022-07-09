@@ -13,7 +13,7 @@ const VariantPageComponent = ({data,currentPage,setCurrentPage,variant}) => {
     return (
         <Header>
             <Head>
-        <title>Disney+ |{variant}</title>
+        <title>Disney+ | {variant}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
             <div className={s.container}>

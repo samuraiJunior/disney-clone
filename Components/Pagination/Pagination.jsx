@@ -11,12 +11,11 @@ const Paginator = ({ total_pages, currentPage, setCurrentPage }) => {
   return (
     <div className={s.PaginationWrapper}>
       <Pagination page={currentPage} sx={{
-        ".css-wjh20t-MuiPagination-ul": { justifyContent: "space-between" }, background: "transaperent",
-        ".css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected": { background: "#ffffffa1", color: "black" },
-        ".css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-disabled": { background: "white", color: "black" },
-        ".css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root": { background: "white" },
-        ".css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root:hover": { background: "#ffffffa1" },
-        ".css-1v2lvtn-MuiPaginationItem-root":{color: "white" },
+        ".MuiPagination-ul": { justifyContent: "space-between" }, background: "transaperent",
+        ".MuiPaginationItem-root.Mui-selected": { background: "#ffffffa1", color: "black" },
+        ".MuiPaginationItem-root.Mui-disabled": { background: "#ffffffa1", color: "white" },
+        ".MuiPaginationItem-root:hover": { background: "#ffffffa1" },
+        ".MuiPaginationItem-root":{background: "white" },
       }}
         size={"medium"}
         siblingCount={querys.descktop && 5 || querys.lapTop && 3 || querys.table && 2}
