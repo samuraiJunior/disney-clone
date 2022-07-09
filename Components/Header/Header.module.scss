@@ -17,7 +17,7 @@
 .NavItemsWrapper {
     display: flex;
     align-items: center;
-    margin-left: 250px;
+    margin-left: 350px;
 
     &>*+* {
         margin-left: 41px;
@@ -73,8 +73,6 @@
     }
 
     .NavItemsWrapper {
-        margin-left: 50px;
-
         &>*+* {
             margin-left: 21px;
         }
@@ -82,10 +80,11 @@
 }
 
 @media (max-width:1550px) {
-    .NavItemsWrapper{
+    .NavItemsWrapper {
         display: none;
     }
-    .Header{
+
+    .Header {
         justify-content: space-between;
     }
 }
